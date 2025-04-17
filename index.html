@@ -18,7 +18,7 @@
 
   <body class="bg-[var(--bg-light)] text-[var(--primary)]">
     <!-- Navbar -->
-    <header class="bg-white shadow fixed min-w-full">
+    <header class="bg-white fixed top-0 w-full z-50 border-b-2">
       <div
         class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
       >
@@ -35,6 +35,17 @@
           >
         </nav>
       </div>
+      <div
+        class="fixed top-[100%] left-0 w-full h-6 z-40 pointer-events-none"
+        style="
+          background: linear-gradient(
+            to bottom,
+            rgba(69, 140, 254, 0.3),
+            rgba(117, 57, 255, 0.2),
+            transparent
+          );
+        "
+      ></div>
     </header>
 
     <!-- Hero Section -->
@@ -80,28 +91,51 @@
           Our Services
         </h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="p-6 bg-[var(--bg-light)] rounded-lg shadow">
-            <h4 class="text-xl font-bold mb-2">
-              Tableau Dashboard Development
-            </h4>
-            <p>
-              Custom dashboards built with Tableau Desktop and Tableau Cloud
-              tailored to your business needs.
-            </p>
+          <div
+            class="bg-gradient-to-r from-blue-600 to-purple-500 p-1 rounded-xl transition transform duration-300 hover:scale-105"
+          >
+            <div
+              class="p-6 rounded-lg h-full"
+              style="background-color: var(--bg-light)"
+            >
+              <h4 class="text-xl font-bold mb-2">
+                Tableau Dashboard Development
+              </h4>
+              <p>
+                Build clear, interactive dashboards in Tableau Desktop and
+                Tableau Cloud - customized to your business goals and reporting
+                needs.
+              </p>
+            </div>
           </div>
-          <div class="p-6 bg-[var(--bg-light)] rounded-lg shadow">
-            <h4 class="text-xl font-bold mb-2">Cloud Integration</h4>
-            <p>
-              Seamless Tableau integrations with cloud platforms like AWS and
-              Azure.
-            </p>
+          <div
+            class="bg-gradient-to-r from-blue-600 to-purple-500 p-1 rounded-xl transition transform duration-300 hover:scale-105"
+          >
+            <div
+              class="p-6 rounded-lg h-full"
+              style="background-color: var(--bg-light)"
+            >
+              <h4 class="text-xl font-bold mb-2">Cloud Integration</h4>
+              <p>
+                Seamlessly connect Tableau to the cloud with secure, scalable
+                integrations with AWS and Azure.
+              </p>
+            </div>
           </div>
-          <div class="p-6 bg-[var(--bg-light)] rounded-lg shadow">
-            <h4 class="text-xl font-bold mb-2">Data Modeling & SQL</h4>
-            <p>
-              Data preparation, transformation, and querying for optimized
-              Tableau reporting.
-            </p>
+          <div
+            class="bg-gradient-to-r from-blue-600 to-purple-500 p-1 rounded-xl transition transform duration-300 hover:scale-105"
+          >
+            <div
+              class="p-6 rounded-lg h-full"
+              style="background-color: var(--bg-light)"
+            >
+              <h4 class="text-xl font-bold mb-2">Data Modeling & SQL</h4>
+              <p>
+                Prepare and transform your data with expert SQL and modeling
+                strategies, ensuring fast performance and deeper, actionable
+                insights.
+              </p>
+            </div>
           </div>
         </div>
       </div>
